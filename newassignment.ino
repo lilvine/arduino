@@ -1,0 +1,12 @@
+const int potentiometerPin = 36; // ESP32 analog pin
+
+void setup() {
+  Serial.begin(115200);
+}
+
+void loop() {
+  int sensorValue = analogRead(potentiometerPin);
+  Serial.print("Potentiometer Value: ");
+  Serial.println(sensorValue);
+  delay(500);
+}
